@@ -14,7 +14,7 @@ import {
 class About extends React.Component {
     render() {
         return (
-            <div id="about">
+            <section id="about">
                 <Container className="text-center my-5">
                 <Row>
                     <Col sm="12" md={{ size: 8, offset: 2 }}>
@@ -79,7 +79,7 @@ class About extends React.Component {
                     </Col>
                 </Row>
                 </Container>
-            </div>
+            </section>
         )
     }
 }
