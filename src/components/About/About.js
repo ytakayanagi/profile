@@ -1,15 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, CardTitle, CardBody, CardText } from 'reactstrap';
 import { Animated } from "react-animated-css";
-import { 
-    FaHtml5, 
-    FaCss3Alt, 
-    FaJs, 
-    FaPhp,
-    
-    FaNodeJs,
-    FaReact
-} from 'react-icons/fa';
 
 class About extends React.Component {
     render() {
