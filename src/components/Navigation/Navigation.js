@@ -9,6 +9,7 @@ import {
     NavItem,
     NavLink } from 'reactstrap';
 import Sticky from 'react-stickynode';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class Navigation extends React.Component {
     constructor(props) {
@@ -19,11 +20,19 @@ class Navigation extends React.Component {
         isOpen: false
         };
     }
+
     toggle() {
         this.setState({
         isOpen: !this.state.isOpen
         });
     }
+
+    onClick() {
+        this.setState(state => ({
+
+        }))
+    }
+
     render() {
         return (
             <Sticky innerZ={1000}>
@@ -34,13 +43,13 @@ class Navigation extends React.Component {
                         <Collapse isOpen={this.state.isOpen} navbar>
                                 <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <NavLink href="#about">About</NavLink>
+                                    <AnchorLink offset='75' href="#about"><NavLink>About</NavLink></AnchorLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="#work">Work</NavLink>
+                                    <AnchorLink offset='75' href="#work"><NavLink>Work</NavLink></AnchorLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="#contact">Contact</NavLink>
+                                    <AnchorLink offset='75' href="#contact"><NavLink>Contact</NavLink></AnchorLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>

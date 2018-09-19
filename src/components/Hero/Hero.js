@@ -114,10 +114,10 @@ const Hero = (props) => {
       <div>
         <Jumbotron fluid>
           <Container fluid className="text-center contents">
-            <img src={profile} class="img-fluid rounded-circle mb-3" alt="Yujin Takayanagi" />
+            <img src={profile} className="img-fluid rounded-circle mb-3" alt="Yujin Takayanagi" />
             <h1>Hello, I'm Yujin.</h1>
-            <h1 class="display-4 mb-4">A <span class="border-bottom border-light">Front-end Developer</span></h1>
-            <p class="lead">I love coding and making a difference in peoples' lives.</p>
+            <h1 className="display-4 mb-4">A <span className="border-bottom border-light">Front-end Developer</span></h1>
+            <p className="lead">I love coding and making a difference in peoples' lives.</p>
           </Container>
           <Particles className="particles" params={particlesOptions} />
         </Jumbotron>
